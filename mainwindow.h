@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "qmdiarea.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -8,6 +9,8 @@ namespace Ui {
 class MainWindow;
 }
 QT_END_NAMESPACE
+
+#include "form_locations.h"
 
 class MainWindow : public QMainWindow
 {
@@ -35,6 +38,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QMdiArea *mdiArea;
+    void maintainLocation();
+    Form_Locations *formLocations;
 
 };
 #endif // MAINWINDOW_H

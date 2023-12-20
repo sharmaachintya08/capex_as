@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,9 +25,11 @@ SOURCES += \
     form_uom.cpp \
     form_vendors.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    modellocation.cpp
 
 HEADERS += \
+    db.h \
     form_approver.h \
     form_area.h \
     form_category.h \
@@ -43,7 +45,8 @@ HEADERS += \
     form_unit.h \
     form_uom.h \
     form_vendors.h \
-    mainwindow.h
+    mainwindow.h \
+    modellocation.h
 
 FORMS += \
     form_approver.ui \
@@ -69,6 +72,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    capex.sqlite
 
 RESOURCES += \
     icons.qrc
