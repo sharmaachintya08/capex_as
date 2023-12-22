@@ -11,6 +11,7 @@ class MainWindow;
 QT_END_NAMESPACE
 
 #include "form_locations.h"
+#include "form_approver.h"
 
 class MainWindow : public QMainWindow
 {
@@ -41,6 +42,6 @@ private:
     QMdiArea *mdiArea;
     void maintainLocation();
     Form_Locations *formLocations;
-
+    Form_approver *form_approver;
 };
 #endif // MAINWINDOW_H

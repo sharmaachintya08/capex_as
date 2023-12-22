@@ -8,7 +8,7 @@
 bool createConnection()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("capex.sqlite");
+    db.setDatabaseName("/Users/achintya/Documents/Git/Github/capex_as/capex.sqlite");
 
     if (!db.open()){
         QMessageBox::critical(0, QObject::tr("Database Error"),

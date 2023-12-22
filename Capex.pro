@@ -26,6 +26,7 @@ SOURCES += \
     form_vendors.cpp \
     main.cpp \
     mainwindow.cpp \
+    modelapprover.cpp \
     modellocation.cpp
 
 HEADERS += \
@@ -46,6 +47,7 @@ HEADERS += \
     form_uom.h \
     form_vendors.h \
     mainwindow.h \
+    modelapprover.h \
     modellocation.h
 
 FORMS += \
