@@ -28,6 +28,7 @@ SOURCES += \
     mainwindow.cpp \
     modelapprover.cpp \
     modelarea.cpp \
+    modelcategory.cpp \
     modellocation.cpp
 
 HEADERS += \
@@ -50,6 +51,7 @@ HEADERS += \
     mainwindow.h \
     modelapprover.h \
     modelarea.h \
+    modelcategory.h \
     modellocation.h
 
 FORMS += \

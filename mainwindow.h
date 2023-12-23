@@ -13,6 +13,7 @@ QT_END_NAMESPACE
 #include "form_locations.h"
 #include "form_approver.h"
 #include "form_area.h"
+#include "form_category.h"
 
 class MainWindow : public QMainWindow
 {
@@ -45,5 +46,6 @@ private:
     Form_Locations *formLocations;
     Form_approver *form_approver;
     Form_area *Formarea;
+    Form_category *Formcategory;
 };
 #endif // MAINWINDOW_H
