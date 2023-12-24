@@ -35,7 +35,10 @@ SOURCES += \
     modellocation.cpp \
     modelnature.cpp \
     modelorigin.cpp \
-    modelrecommendation.cpp
+    modelrecommendation.cpp \
+    modelstatus.cpp \
+    modelsubcategory.cpp \
+    modelunit.cpp
 
 HEADERS += \
     db.h \
@@ -64,7 +67,10 @@ HEADERS += \
     modellocation.h \
     modelnature.h \
     modelorigin.h \
-    modelrecommendation.h
+    modelrecommendation.h \
+    modelstatus.h \
+    modelsubcategory.h \
+    modelunit.h
 
 FORMS += \
     form_approver.ui \

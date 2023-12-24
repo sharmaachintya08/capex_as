@@ -20,6 +20,9 @@ QT_END_NAMESPACE
 #include "form_nature.h"
 #include "form_origin.h"
 #include "form_recommendation.h"
+#include "form_status.h"
+#include "form_subcategory.h"
+#include "form_unit.h"
 
 class MainWindow : public QMainWindow
 {
@@ -59,5 +62,8 @@ private:
     Form_nature *formNature;
     Form_origin *formOrigin;
     Form_recommendation *formRecommendation;
+    Form_status *formStatus;
+    Form_subcategory *FormSubcategory;
+    Form_unit *FormUnit;
 };
 #endif // MAINWINDOW_H
