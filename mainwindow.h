@@ -23,6 +23,8 @@ QT_END_NAMESPACE
 #include "form_status.h"
 #include "form_subcategory.h"
 #include "form_unit.h"
+#include "form_uom.h"
+#include "form_vendors.h"
 
 class MainWindow : public QMainWindow
 {
@@ -65,5 +67,7 @@ private:
     Form_status *formStatus;
     Form_subcategory *FormSubcategory;
     Form_unit *FormUnit;
+    Form_uom *formUOM;
+    Form_vendors *formVendor;
 };
 #endif // MAINWINDOW_H

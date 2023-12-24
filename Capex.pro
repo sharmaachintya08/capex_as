@@ -38,7 +38,9 @@ SOURCES += \
     modelrecommendation.cpp \
     modelstatus.cpp \
     modelsubcategory.cpp \
-    modelunit.cpp
+    modelunit.cpp \
+    modeluom.cpp \
+    modelvendor.cpp
 
 HEADERS += \
     db.h \
@@ -70,7 +72,9 @@ HEADERS += \
     modelrecommendation.h \
     modelstatus.h \
     modelsubcategory.h \
-    modelunit.h
+    modelunit.h \
+    modeluom.h \
+    modelvendor.h
 
 FORMS += \
     form_approver.ui \
