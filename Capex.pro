@@ -32,7 +32,8 @@ SOURCES += \
     modelcurrency.cpp \
     modelexptype.cpp \
     modelfrequency.cpp \
-    modellocation.cpp
+    modellocation.cpp \
+    modelnature.cpp
 
 HEADERS += \
     db.h \
@@ -58,7 +59,8 @@ HEADERS += \
     modelcurrency.h \
     modelexptype.h \
     modelfrequency.h \
-    modellocation.h
+    modellocation.h \
+    modelnature.h
 
 FORMS += \
     form_approver.ui \
