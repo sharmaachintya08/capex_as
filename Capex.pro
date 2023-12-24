@@ -34,7 +34,8 @@ SOURCES += \
     modelfrequency.cpp \
     modellocation.cpp \
     modelnature.cpp \
-    modelorigin.cpp
+    modelorigin.cpp \
+    modelrecommendation.cpp
 
 HEADERS += \
     db.h \
@@ -62,7 +63,8 @@ HEADERS += \
     modelfrequency.h \
     modellocation.h \
     modelnature.h \
-    modelorigin.h
+    modelorigin.h \
+    modelrecommendation.h
 
 FORMS += \
     form_approver.ui \

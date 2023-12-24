@@ -19,6 +19,7 @@ QT_END_NAMESPACE
 #include "form_frequency.h"
 #include "form_nature.h"
 #include "form_origin.h"
+#include "form_recommendation.h"
 
 class MainWindow : public QMainWindow
 {
@@ -57,5 +58,6 @@ private:
     Form_frequency *formFrequency;
     Form_nature *formNature;
     Form_origin *formOrigin;
+    Form_recommendation *formRecommendation;
 };
 #endif // MAINWINDOW_H
