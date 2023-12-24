@@ -18,6 +18,7 @@ QT_END_NAMESPACE
 #include "form_exptype.h"
 #include "form_frequency.h"
 #include "form_nature.h"
+#include "form_origin.h"
 
 class MainWindow : public QMainWindow
 {
@@ -55,5 +56,6 @@ private:
     Form_exptype *FormExptype;
     Form_frequency *formFrequency;
     Form_nature *formNature;
+    Form_origin *formOrigin;
 };
 #endif // MAINWINDOW_H
