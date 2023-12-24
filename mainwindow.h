@@ -15,6 +15,7 @@ QT_END_NAMESPACE
 #include "form_area.h"
 #include "form_category.h"
 #include "form_currency.h"
+#include "form_exptype.h"
 
 class MainWindow : public QMainWindow
 {
@@ -49,5 +50,6 @@ private:
     Form_area *Formarea;
     Form_category *Formcategory;
     Form_currency *FormCurrency;
+    Form_exptype *FormExptype;
 };
 #endif // MAINWINDOW_H
