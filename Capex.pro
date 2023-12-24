@@ -31,6 +31,7 @@ SOURCES += \
     modelcategory.cpp \
     modelcurrency.cpp \
     modelexptype.cpp \
+    modelfrequency.cpp \
     modellocation.cpp
 
 HEADERS += \
@@ -56,6 +57,7 @@ HEADERS += \
     modelcategory.h \
     modelcurrency.h \
     modelexptype.h \
+    modelfrequency.h \
     modellocation.h
 
 FORMS += \
