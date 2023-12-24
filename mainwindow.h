@@ -14,6 +14,7 @@ QT_END_NAMESPACE
 #include "form_approver.h"
 #include "form_area.h"
 #include "form_category.h"
+#include "form_currency.h"
 
 class MainWindow : public QMainWindow
 {
@@ -47,5 +48,6 @@ private:
     Form_approver *form_approver;
     Form_area *Formarea;
     Form_category *Formcategory;
+    Form_currency *FormCurrency;
 };
 #endif // MAINWINDOW_H

@@ -29,6 +29,7 @@ SOURCES += \
     modelapprover.cpp \
     modelarea.cpp \
     modelcategory.cpp \
+    modelcurrency.cpp \
     modellocation.cpp
 
 HEADERS += \
@@ -52,6 +53,7 @@ HEADERS += \
     modelapprover.h \
     modelarea.h \
     modelcategory.h \
+    modelcurrency.h \
     modellocation.h
 
 FORMS += \
