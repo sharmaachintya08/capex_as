@@ -15,6 +15,7 @@
 #include "form_unit.h"
 #include "form_uom.h"
 #include "form_vendors.h"
+#include "form_capex.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -37,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->actionUnit, &QAction::triggered, this, &MainWindow::openUnitChildWidget);
     connect(ui->actionUom, &QAction::triggered, this, &MainWindow::openUomChildWidget);
     connect(ui->actionVendor, &QAction::triggered, this, &MainWindow::openVendorsChildWidget);
+    connect(ui->actionCapex_2, &QAction::triggered, this, &MainWindow::openCapexChildWidget);
 }
 
 MainWindow::~MainWindow()
@@ -44,6 +46,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::openCapexChildWidget()
+{
+    Form_capex *formCapex = new Form_capex(this);
+    ui->mdiArea->addSubWindow(formCapex);
+    formCapex->show();
+}
 void MainWindow::openLocationChildWidget()
 {
     Form_Locations *formLocations = new Form_Locations(this);

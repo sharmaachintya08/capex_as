@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     form_approver.cpp \
     form_area.cpp \
+    form_capex.cpp \
     form_category.cpp \
     form_currency.cpp \
     form_exptype.cpp \
@@ -46,6 +47,7 @@ HEADERS += \
     db.h \
     form_approver.h \
     form_area.h \
+    form_capex.h \
     form_category.h \
     form_currency.h \
     form_exptype.h \
@@ -79,6 +81,7 @@ HEADERS += \
 FORMS += \
     form_approver.ui \
     form_area.ui \
+    form_capex.ui \
     form_category.ui \
     form_currency.ui \
     form_exptype.ui \

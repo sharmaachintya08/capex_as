@@ -25,6 +25,7 @@ QT_END_NAMESPACE
 #include "form_unit.h"
 #include "form_uom.h"
 #include "form_vendors.h"
+#include "form_capex.h"
 
 class MainWindow : public QMainWindow
 {
@@ -49,6 +50,7 @@ private slots:
     void openUnitChildWidget();
     void openUomChildWidget();
     void openVendorsChildWidget();
+    void openCapexChildWidget();
 
 private:
     Ui::MainWindow *ui;
@@ -69,5 +71,6 @@ private:
     Form_unit *FormUnit;
     Form_uom *formUOM;
     Form_vendors *formVendor;
+    Form_capex *formCapex;
 };
 #endif // MAINWINDOW_H
