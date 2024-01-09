@@ -29,6 +29,7 @@ SOURCES += \
     mainwindow.cpp \
     modelapprover.cpp \
     modelarea.cpp \
+    modelcapex.cpp \
     modelcategory.cpp \
     modelcurrency.cpp \
     modelexptype.cpp \
@@ -64,6 +65,7 @@ HEADERS += \
     mainwindow.h \
     modelapprover.h \
     modelarea.h \
+    modelcapex.h \
     modelcategory.h \
     modelcurrency.h \
     modelexptype.h \
