@@ -11,7 +11,7 @@ Form_capex::Form_capex(QWidget *parent)
 
     modelCapex = new modelcapex(this);
 
-    connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction); //should be submit action here
+    connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction);
     connect(ui->pushButton_close, &QPushButton::clicked, this, &Form_capex::closeAction);
 
     ui->tableView->setModel(modelCapex);
@@ -33,7 +33,7 @@ Form_capex::~Form_capex()
 }
 
 
-void Form_capex::submitAction() //this should be submit action not save
+void Form_capex::submitAction()
 {
     if (modelCapex->save())
     {
