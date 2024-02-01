@@ -17,8 +17,7 @@ Form_capex::Form_capex(QWidget *parent)
 
     for (const QString& key : foreignKeys) {
         int columnIndex = modelCapex->fieldIndex(key);
-        columnIndexForForeignKey = columnIndex;
-        ui->tableView->setItemDelegateForColumn(columnIndexForForeignKey, new QSqlRelationalDelegate(this));
+        ui->tableView->setItemDelegateForColumn(columnIndex, new QSqlRelationalDelegate(this));
     }
 
     connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction);
