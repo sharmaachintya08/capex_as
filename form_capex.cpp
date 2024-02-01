@@ -12,13 +12,8 @@ Form_capex::Form_capex(QWidget *parent)
 
     modelCapex = new modelcapex(this);
 
-    QStringList foreignKeys = {"CapexID","BudgetNo","UnitID","LocationID","AreaID","CategoryID","SubcategoryID","CurrencyID","UOMID","RecommendationID","ExpTypeID",
-                                "NatureID","FrequencyID","OriginID","VendorID","StatusID","ApproverID"}; //list of foriegn key names
-
-    for (const QString& key : foreignKeys) {
-        int columnIndex = modelCapex->fieldIndex(key);
-        ui->tableView->setItemDelegateForColumn(columnIndex, new QSqlRelationalDelegate(this));
-    }
+    QSqlRelationalDelegate *delegate = new QSqlRelationalDelegate(this);
+    ui->tableView->setItemDelegate(delegate);
 
     connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction);
     connect(ui->pushButton_close, &QPushButton::clicked, this, &Form_capex::closeAction);
