@@ -12,9 +12,6 @@ Form_capex::Form_capex(QWidget *parent)
 
     modelCapex = new modelcapex(this);
 
-    columnIndexForForeignKey = modelCapex->fieldIndex("LocationID");
-    ui->tableView->setItemDelegateForColumn(columnIndexForForeignKey, new QSqlRelationalDelegate(this));
-
     QStringList foreignKeys = {"CapexID","BudgetNo","UnitID","LocationID","AreaID","CategoryID","SubcategoryID","CurrencyID","UOMID","RecommendationID","ExpTypeID",
                                 "NatureID","FrequencyID","OriginID","VendorID","StatusID","ApproverID"}; //list of foriegn key names
 
