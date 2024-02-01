@@ -20,6 +20,7 @@ class Form_capex : public QWidget
 private slots:
     void submitAction();
     void closeAction();
+    void createAction();
 
 public:
     explicit Form_capex(QWidget *parent = nullptr);

@@ -13,6 +13,7 @@ Form_capex::Form_capex(QWidget *parent)
 
     connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction);
     connect(ui->pushButton_close, &QPushButton::clicked, this, &Form_capex::closeAction);
+    connect(ui->pushButton_create, &QPushButton::clicked, this, &Form_capex::createAction);
 
     ui->tableView->setModel(modelCapex);
 
@@ -48,4 +49,20 @@ void Form_capex::submitAction()
 void Form_capex::closeAction()
 {
     this->parentWidget()->close();
+}
+
+void Form_capex::createAction()
+{
+    QModelIndex modelIndex = QModelIndex();
+    const int row = modelCapex->rowCount();
+    modelIndex = modelCapex->create(row);
+    if(modelIndex.isValid())
+    {
+        qDebug() << "DEBUG: WidgetUnits::creatAction valid Index: " << modelIndex;
+        ui->tableView->setCurrentIndex(modelIndex);
+    }
+    else
+    {
+        qDebug() << "DEBUG: WidgetUnits::createAction Invalid Index: " << modelIndex;
+    }
 }
