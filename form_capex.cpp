@@ -1,5 +1,6 @@
 #include "form_capex.h"
 #include "ui_form_capex.h"
+#include <QSqlRelationalDelegate>
 
 Form_capex::Form_capex(QWidget *parent)
     : QWidget(parent)
@@ -10,6 +11,18 @@ Form_capex::Form_capex(QWidget *parent)
     setAttribute(Qt::WA_DeleteOnClose);
 
     modelCapex = new modelcapex(this);
+
+    columnIndexForForeignKey = modelCapex->fieldIndex("LocationID");
+    ui->tableView->setItemDelegateForColumn(columnIndexForForeignKey, new QSqlRelationalDelegate(this));
+
+    QStringList foreignKeys = {"CapexID","BudgetNo","UnitID","LocationID","AreaID","CategoryID","SubcategoryID","CurrencyID","UOMID","RecommendationID","ExpTypeID",
+                                "NatureID","FrequencyID","OriginID","VendorID","StatusID","ApproverID"}; //list of foriegn key names
+
+    for (const QString& key : foreignKeys) {
+        int columnIndex = modelCapex->fieldIndex(key);
+        columnIndexForForeignKey = columnIndex;
+        ui->tableView->setItemDelegateForColumn(columnIndexForForeignKey, new QSqlRelationalDelegate(this));
+    }
 
     connect(ui->pushButton_submit, &QPushButton::clicked, this, &Form_capex::submitAction);
     connect(ui->pushButton_close, &QPushButton::clicked, this, &Form_capex::closeAction);

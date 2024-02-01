@@ -30,6 +30,7 @@ public:
 
 private:
     Ui::Form_capex *ui;
+    int columnIndexForForeignKey;
 };
 
 
